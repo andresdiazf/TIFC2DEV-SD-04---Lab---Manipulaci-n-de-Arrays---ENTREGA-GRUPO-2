@@ -1,7 +1,7 @@
 
 // Fecha 19 de marzo 2026
 // Ejercicios de Estructuras de Datos en JavaScript - grupo 2
-// nombres : Luis Salgado, Daniel Felipe Avila , Fernando Alayón, Andres Diaz Figuerooa
+// nombres : Luis Salgado, Daniel Felipe Avila , Fernando Alayón, Andres Diaz Figueroa
 
 
 // punto 1 : - Una app para calcular propinas en restaurantes.
@@ -186,8 +186,6 @@ else{
 // Crea una función convertirMoneda(monto, monedaDestino) que convierta de pesos a USD o EUR,
 // pedir al usuario monto en COP y la moneda con la que desea hacer la converción.
 
-
-
 function convertirMoneda(monto, monedaDestino) {
         const tasaCambio = {
                 USD: 0.00027,
@@ -199,13 +197,13 @@ function convertirMoneda(monto, monedaDestino) {
         return 0;
 }
 
-let monto = 100000;
-let monedaDestino = "USD";
+let monto = prompt("¿Cuál es el monto ");
+let monedaDestino = prompt("¿Cuál es la moneda a la que desea convertir? (USD o EUR) ");
 let montoConvertido = convertirMoneda(monto, monedaDestino);
 
 
-let monto2 = 200000;
-let monedaDestino2 = "EUR";
+let monto2 = prompt("¿Cuál es el monto 2  ");
+let monedaDestino2 = prompt("¿Cuál es la moneda a la que desea convertir? (USD o EUR) ");
 let montoConvertido2 = convertirMoneda(monto2, monedaDestino2);
 
 console.log(`Monto en ${monedaDestino2}: ${montoConvertido2.toFixed(2)} y Monto en ${monedaDestino}: ${montoConvertido.toFixed(2)}`);
